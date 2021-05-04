@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- actions -->
+
+  <!-- machines.area action -->
+  <record id="machines_area_action" model="ir.actions.act_window">
+    <field name="name">Area</field>
+    <field name="res_model">machines.area</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create your First Area!</p>
+    </field>
+  </record>
+
+  <!-- menus -->
+
+  <!-- root menu -->
+  <menuitem id="machines_menu" name="SL Machines" sequence="5" />
+
+  <!-- sub menus -->
+
+  <!-- machines menus -->
+  <menuitem id="machines_area_menu" name="Areas" action="machines_area_action" parent="machines_menu" sequence="5" />
+
+</odoo>
