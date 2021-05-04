@@ -8,4 +8,4 @@ class MachinesArea(models.Model):
     _description = 'Area'
 
     name = fields.Char(string='Name', required=True)
-    description = fields.Char(string='Description')
+    description = fields.Text(string='Description')
