@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_machines_area,access.machines.area,model_machines_area,base.group_user,1,1,1,1
+access_machines_model,access.machines.model,model_machines_model,base.group_user,1,1,1,1
+access_machines_machine,access.machines.machine,model_machines_machine,base.group_user,1,1,1,1

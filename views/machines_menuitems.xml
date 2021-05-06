@@ -13,6 +13,26 @@
     </field>
   </record>
 
+  <!-- machines.model.action -->
+  <record id="machines_model_action" model="ir.actions.act_window">
+    <field name="name">Machine Models</field>
+    <field name="res_model">machines.model</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create your First Model!</p>
+    </field>
+  </record>
+
+  <!-- machines.machine.action -->
+  <record id="machines_machine_action" model="ir.actions.act_window">
+    <field name="name">Machines</field>
+    <field name="res_model">machines.machine</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">Create your First Machine!</p>
+    </field>
+  </record>
+
   <!-- menus -->
 
   <!-- root menu -->
@@ -21,6 +41,9 @@
   <!-- sub menus -->
 
   <!-- machines menus -->
-  <menuitem id="machines_area_menu" name="Areas" action="machines_area_action" parent="machines_menu" sequence="5" />
+  <menuitem id="machines_items_menu" name="Machines" parent="machines_menu" sequence="1"/>
+  <menuitem id="machines_machine_menu" name="Machines" action="machines_machine_action" parent="machines_items_menu" sequence="3" />
+  <menuitem id="machines_model_menu" name="Models" action="machines_model_action" parent="machines_items_menu" sequence="4" />
+  <menuitem id="machines_area_menu" name="Areas" action="machines_area_action" parent="machines_items_menu" sequence="5" />
 
 </odoo>
