@@ -16,6 +16,11 @@
           <group>
             <field name="description" />
           </group>
+          <notebook>
+            <page name="models" string="Models">
+              <field name="model_ids" />
+            </page>
+          </notebook>
         </sheet>
       </form>
     </field>

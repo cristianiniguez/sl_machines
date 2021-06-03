@@ -9,3 +9,6 @@ class MachinesModel(models.Model):
 
     name = fields.Char(string='Code')
     area_id = fields.Many2one(comodel_name='machines.area', string='Area')
+
+    machine_ids = fields.One2many(
+        comodel_name='machines.machine', inverse_name='model_id', string='Machines')

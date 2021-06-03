@@ -16,6 +16,11 @@
           <group>
             <field name="area_id" />
           </group>
+          <notebook>
+            <page name="machines" string="Machines">
+              <field name="machine_ids" />
+            </page>
+          </notebook>
         </sheet>
       </form>
     </field>
