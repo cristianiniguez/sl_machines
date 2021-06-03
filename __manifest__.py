@@ -27,6 +27,8 @@
 
         'views/machines_menuitems.xml',
         'views/machines_area_views.xml',
+        'views/machines_model_views.xml',
+        'views/machines_machine_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

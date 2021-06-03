@@ -8,4 +8,4 @@ class MachinesModel(models.Model):
     _description = 'Model or Group of machines'
 
     name = fields.Char(string='Code')
-    area = fields.Many2one(comodel_name='machines.area', string='Area')
+    area_id = fields.Many2one(comodel_name='machines.area', string='Area')

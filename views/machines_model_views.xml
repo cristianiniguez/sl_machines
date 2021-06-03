@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- form view -->
+  <record id="machines_model_view_form" model="ir.ui.view">
+    <field name="name">machines.model.view.form</field>
+    <field name="model">machines.model</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <div class="oe_title">
+            <h1>
+              <field name="name" placeholder="Code" default_focus="1" />
+            </h1>
+          </div>
+          <group>
+            <field name="area_id" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <!-- tree view -->
+  <record id="machines_model_view_tree" model="ir.ui.view">
+    <field name="name">machines.model.view.tree</field>
+    <field name="model">machines.model</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name" />
+        <field name="area_id" />
+      </tree>
+    </field>
+  </record>
+
+</odoo>
